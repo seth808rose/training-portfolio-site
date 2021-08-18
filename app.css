@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Classes */
+
+.section-center {
+  width: 87vw;
+  max-width: 1170px;
+  padding: 4rem 0;
+  margin: 0 auto;
+}
+
+nav {
+  position: fixed;
+  z-index: 6;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.logo {
+  color: white;
+  font-size: 2rem;
+  padding: 1rem;
+  text-transform: capitalize;
+}
+
+.toggle {
+  justify-self: right;
+  cursor: pointer;
+  color: white;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.header {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)),
+    url(./images/pexels-photo-2356071.jpeg) center/cover no-repeat fixed;
+  color: white;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  text-transform: capitalize;
+  overflow-x: hidden;
+}
+
+.banner {
+  text-align: center;
+  line-height: 4rem;
+}
+
+.banner h1 {
+  font-size: 30px;
+  line-height: 2em;
+}
+
+.banner span {
+  font-size: 90px;
+}
+
+.banner h3 {
+  font-size: 25px;
+}
+
+.navlinks {
+  display: none;
+}
+
+@media screen and (min-width: 796px) {
+  .nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .navlinks {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .navlinks li {
+    list-style: none;
+    font-size: 1.5rem;
+  }
+
+  .navlinks a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+
+  .toggle {
+    display: none;
+  }
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem;
+  font-size: 3rem;
+  transition: all 0.3s linear;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 100vh;
+  background: white;
+  z-index: 5;
+  display: grid;
+  place-items: center;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  transform: translateX(-100%);
+}
+
+sidebar-links {
+  border-radius: 3px;
+}
+
+.sidebar li {
+  list-style: none;
+  font-size: 3rem;
+  margin-top: 1.5rem;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: black;
+}
+
+.close:hover {
+  color: red;
+  cursor: pointer;
+}
+
+/* About */
+
+.about {
+  padding: 3rem 0;
+}
+
+.about-title {
+  font-size: 1.5rem;
+  display: grid;
+  place-items: center;
+}
+
+.about-text {
+  max-width: 30rem;
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+.about-text p {
+  margin: 1.5rem;
+}
+
+.about-info {
+  display: grid;
+  text-align: center;
+}
+
+.about-photo {
+  width: 460px;
+  height: 340px;
+}
+
+@media screen and (min-width: 992px) {
+  .about-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .about-photo {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 1160px) {
+  .about-img img {
+    width: 450px;
+    height: 330px;
+  }
+  .about-text {
+    font-size: 1.5rem;
+  }
+}
