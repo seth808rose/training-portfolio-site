@@ -29,18 +29,23 @@ nav {
   text-transform: capitalize;
 }
 
-.toggle {
+.toggle-btn {
   justify-self: right;
   cursor: pointer;
   color: white;
   font-size: 2rem;
   padding: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.toggle-btn:hover {
+  color: rgb(155, 175, 38);
 }
 
 .header {
   position: relative;
   min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)),
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
     url(./images/pexels-photo-2356071.jpeg) center/cover no-repeat fixed;
   color: white;
   display: grid;
@@ -72,12 +77,12 @@ nav {
   display: none;
 }
 
-
 @media screen and (min-width: 796px) {
   .nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
   .navlinks {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -94,18 +99,23 @@ nav {
     font-weight: bold;
   }
 
-  .toggle {
+  .toggle-btn {
     display: none;
   }
 }
 
-.close {
+.close-btn {
   position: absolute;
   top: 0;
   right: 0;
   margin: 1rem;
   font-size: 3rem;
-  transition: all 0.3s linear;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.close-btn:hover {
+  color: red;
 }
 
 .sidebar {
@@ -123,10 +133,12 @@ nav {
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 2rem;
   transform: translateX(-100%);
+  transition: all 0.3s ease-in-out;
 }
 
-sidebar-links {
-  border-radius: 3px;
+/* this is the class that will show the sidebar */
+.show-sidebar {
+  transform: translate(0);
 }
 
 .sidebar li {
@@ -135,15 +147,16 @@ sidebar-links {
   margin-top: 1.5rem;
 }
 
-.sidebar a {
+.sidebar-links a {
   text-decoration: none;
   color: black;
+  transition: all .3s ease-in-out;
 }
 
-.close:hover {
-  color: red;
-  cursor: pointer;
+.sidebar-links a:hover{
+  color: rgb(155, 175, 38);
 }
+
 
 /* About */
 
@@ -172,20 +185,26 @@ sidebar-links {
 .about-btn {
   width: 8rem;
   height: 2.5rem;
-  background: lightgreen;
+  background: linear-gradient(to bottom,rgba(8, 24, 20, 0.4), lightgreen, rgba(30, 4, 175, 0.8));
   border: transparent;
   margin-top: 1.5rem;
   outline: 3px solid darkgreen;
   outline-offset: 3px;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .about-btn:hover{
+  background: lightgreen;
+}
+
+
+
+.about-btn:hover {
   outline-offset: 0;
 }
 
-.about-btn:hover a{
-  transition: all .3s ease-in-out;
+.about-btn:hover a {
+  transition: all 0.3s ease-in-out;
   color: darkgreen;
 }
 
@@ -197,6 +216,12 @@ sidebar-links {
 
 .about-center {
   text-align: center;
+}
+
+.img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
 }
 
 .about-img img {
@@ -216,4 +241,16 @@ sidebar-links {
   .about-img img {
     width: 500px;
   }
+}
+
+/* content divider */
+.content-divider {
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(
+    to left,
+    rgba(116, 214, 113, 0.4),
+    purple,
+    rgba(156, 16, 16, 0.3)
+  );
 }
