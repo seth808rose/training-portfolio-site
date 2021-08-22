@@ -22,6 +22,12 @@ nav {
   align-items: center;
 }
 
+/* fixed navabr */
+.navbar-fixed{
+  background: black;
+}
+
+
 .logo {
   color: white;
   font-size: 2rem;
