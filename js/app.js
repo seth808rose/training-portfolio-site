@@ -1,7 +1,7 @@
 const toggleBtn = document.querySelector(".toggle-btn");
 const sidebar = document.querySelector(".sidebar");
+const navbar = document.querySelector(".nav");
 const closeBtn = document.querySelector(".close-btn");
-const navbar = document.querySelector(".navbar-fixed");
 
 toggleBtn.addEventListener("click", function () {
   sidebar.classList.toggle("show-sidebar");

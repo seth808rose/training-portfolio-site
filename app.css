@@ -23,10 +23,10 @@ nav {
 }
 
 /* fixed navabr */
-.navbar-fixed{
+.navbar-fixed {
   background: black;
+  filter: drop-shadow(0 3px 3px black);
 }
-
 
 .logo {
   color: white;
@@ -156,13 +156,12 @@ nav {
 .sidebar-links a {
   text-decoration: none;
   color: black;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.sidebar-links a:hover{
+.sidebar-links a:hover {
   color: rgb(155, 175, 38);
 }
-
 
 /* About */
 
@@ -172,7 +171,6 @@ nav {
 
 .about-info {
   margin-bottom: 2rem;
-  text-align: center;
   line-height: 1.5rem;
 }
 
@@ -191,27 +189,28 @@ nav {
 .about-btn {
   width: 8rem;
   height: 2.5rem;
-  background: linear-gradient(to bottom,rgba(8, 24, 20, 0.4), lightgreen, rgba(30, 4, 175, 0.8));
+  background: linear-gradient(
+    to bottom,
+    rgba(8, 24, 20, 0.4),
+    lightgreen,
+    rgba(30, 4, 175, 0.8)
+  );
   border: transparent;
   margin-top: 1.5rem;
+  cursor: pointer;
   outline: 3px solid darkgreen;
-  outline-offset: 3px;
-  transition: all 0.3s ease-in-out;
+  outline-offset: 1.5px;
+  transition: all 0.1s ease-in-out;
 }
-
-.about-btn:hover{
-  background: lightgreen;
-}
-
-
 
 .about-btn:hover {
+  background: black;
   outline-offset: 0;
 }
 
 .about-btn:hover a {
   transition: all 0.3s ease-in-out;
-  color: darkgreen;
+  color: white;
 }
 
 .about-btn a {
@@ -225,7 +224,6 @@ nav {
 }
 
 .img {
-  display: block;
   width: 100%;
   object-fit: cover;
 }
