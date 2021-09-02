@@ -273,6 +273,8 @@ nav {
   display: grid;
   place-items: center;
   text-decoration: underline;
+  margin-bottom: -2rem;
+  padding-top: 1rem;
 }
 
 /* contact item */
@@ -285,6 +287,12 @@ nav {
 .contact-form,
 .contact-info {
   margin: 2rem;
+  line-height: 2rem;
+}
+
+.contact-text,
+.contact-title {
+  margin: 0.5rem;
 }
 
 .contact-item {
@@ -295,6 +303,7 @@ nav {
   text-transform: capitalize;
   font-size: 1.7rem;
   color: lightblue;
+  max-width: 35rem;
 }
 
 .contact-text {
@@ -305,25 +314,54 @@ nav {
 /* contact-form */
 
 .contact-form {
-  display: block;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
   border-radius: 5px;
-  text-align: center;
   max-width: 35rem;
+  transition: all 0.5s linear;
 }
 
-.form-control{
+.contact-form:hover {
+  filter: drop-shadow(3px 3px 3px gray);
+}
+
+.form-group {
+  display: grid;
+  place-items: center;
+}
+
+.form-control {
   display: block;
-  width: 100%;
-  border: none;
+  border: transparent;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3));
+  padding: 1rem 0.3rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  width: 90%;
+  color: white;
 }
 
-.contact-form h3 {
+.form-control::placeholder {
+  color: white;
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+
+.contact-form h4 {
   color: white;
   font-size: 1.3rem;
   text-align: center;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  font-weight: bold;
 }
-.form-group {
-  display: inline-block;
-  width: 95%;
+
+@media screen and (min-width: 796px) {
+  .section-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .contact-info {
+    margin-left: 3rem;
+  }
 }
