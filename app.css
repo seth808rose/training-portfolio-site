@@ -265,6 +265,13 @@ nav {
   }
 }
 
+/* contact item */
+.contact {
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
+    url(./images/contact-image-2.jpeg) center/cover no-repeat;
+}
+
 /* contact header */
 .contact-header {
   color: white;
@@ -275,13 +282,6 @@ nav {
   text-decoration: underline;
   margin-bottom: -2rem;
   padding-top: 1rem;
-}
-
-/* contact item */
-.contact {
-  height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
-    url(./images/contact-image.jpeg) center/cover no-repeat;
 }
 
 .contact-form,
@@ -318,10 +318,7 @@ nav {
   border-radius: 5px;
   max-width: 35rem;
   transition: all 0.5s linear;
-}
-
-.contact-form:hover {
-  filter: drop-shadow(3px 3px 3px gray);
+  cursor: pointer;
 }
 
 .form-group {
@@ -364,4 +361,24 @@ nav {
   .contact-info {
     margin-left: 3rem;
   }
+}
+
+/* submit button */
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  background: linear-gradient(rgba(255, 200, 255), rgba(0, 0, 0, 0.2));
+  border: none;
+  color: black;
+  font-size: 1rem;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  letter-spacing: 0.3rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3));
+  color: white;
 }
