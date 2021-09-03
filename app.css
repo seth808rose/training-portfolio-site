@@ -52,13 +52,20 @@ nav {
   position: relative;
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
-    url(./images/pexels-photo-2356071.jpeg) center/cover no-repeat fixed;
+    url(./images/pexels-photo-2356071.jpeg) center/cover no-repeat;
   color: white;
   display: grid;
   place-items: center;
   padding: 2rem;
   text-transform: capitalize;
   overflow-x: hidden;
+}
+
+@media screen and (min-width: 796px) {
+  .header {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+      url(./images/pexels-photo-2356071.jpeg) center/cover no-repeat fixed;
+  }
 }
 
 .banner {
