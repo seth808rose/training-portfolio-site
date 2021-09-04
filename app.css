@@ -276,13 +276,13 @@ nav {
 .contact {
   height: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
-    url(./images/contact-image-2.jpeg) center/cover no-repeat;
+    url(./images/contact-image.jpeg) center/cover no-repeat;
 }
 
 /* contact header */
 .contact-header {
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-transform: capitalize;
   display: grid;
   place-items: center;
@@ -299,7 +299,8 @@ nav {
 
 .contact-text,
 .contact-title {
-  margin: 0.5rem;
+  text-align: left;
+  align-items: left;
 }
 
 .contact-item {
@@ -308,14 +309,21 @@ nav {
 
 .contact-title {
   text-transform: capitalize;
-  font-size: 1.7rem;
+  font-size: 1rem;
   color: lightblue;
   max-width: 35rem;
 }
 
 .contact-text {
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: white;
+}
+
+@media screen and (min-width: 796px) {
+  .contact-text,
+  .contact-title {
+    font-size: 1.7rem;
+  }
 }
 
 /* contact-form */
