@@ -13,6 +13,62 @@
   margin: 0 auto;
 }
 
+/* ====================================== 
+ Animation 
+==========================================*/
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes slider-banner-h1 {
+  0% {
+    transform: translateX(400px);
+    opacity: 0.25;
+  }
+  25% {
+    transform: translateX(-200px);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateX(100px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 100;
+  }
+}
+@keyframes slider-banner-h3 {
+  0% {
+    transform: translateX(-400px);
+    opacity: 0.25;
+  }
+  25% {
+    transform: translateX(200px);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateX(-100px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 100;
+  }
+}
+
+/* ====================================== 
+ Animation 
+==========================================*/
 nav {
   position: fixed;
   z-index: 1;
@@ -42,6 +98,8 @@ nav {
   font-size: 2rem;
   padding: 1rem;
   transition: all 0.3s ease-in-out;
+  /* --------------animation------- */
+  animation: bounce 3s infinite;
 }
 
 .toggle-btn:hover {
@@ -76,6 +134,8 @@ nav {
 .banner h1 {
   font-size: 30px;
   line-height: 2em;
+  /* ------------animation--------------- */
+  animation: slider-banner-h1 3s 1;
 }
 
 .banner span {
@@ -84,6 +144,8 @@ nav {
 
 .banner h3 {
   font-size: 25px;
+  /* ------------animation--------------- */
+  animation: slider-banner-h3 3s 1;
 }
 
 .navlinks {
