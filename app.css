@@ -135,7 +135,7 @@ nav {
   font-size: 30px;
   line-height: 2em;
   /* ------------animation--------------- */
-  animation: slider-banner-h1 3s 1;
+  animation: slider-banner-h1 6s 1;
 }
 
 .banner span {
@@ -145,7 +145,7 @@ nav {
 .banner h3 {
   font-size: 25px;
   /* ------------animation--------------- */
-  animation: slider-banner-h3 3s 1;
+  animation: slider-banner-h3 6s 1;
 }
 
 .navlinks {
