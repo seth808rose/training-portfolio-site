@@ -25,3 +25,16 @@ closeBtn.addEventListener("click", function () {
   sidebar.classList.remove("show-sidebar");
 });
 
+// Function to handle the link click event
+function handleLinkClick(event) {
+  event.preventDefault(); // Prevent the default link behavior
+  window.location.href = "/"; // Redirect to the homepage
+}
+
+// Attach event listeners to phone number links
+document.addEventListener("DOMContentLoaded", function () {
+  var phoneLinks = document.querySelectorAll("a[href^='tel:']");
+  phoneLinks.forEach(function (link) {
+    link.addEventListener("click", handleLinkClick);
+  });
+});
